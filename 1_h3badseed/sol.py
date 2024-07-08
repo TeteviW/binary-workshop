@@ -2,6 +2,12 @@ from pwn import *
 
 io = process('sh')
 
-io.sendline('echo Hello, world')
+io.sendline(b'echo Hello, world')
 
-io.recvline()
+thing = io.recvline()
+
+print(thing)
+
+
+
+
