@@ -13,10 +13,6 @@ print(io.recvuntil(b'Enter your number: '))
 
 io.sendline(b'%d' % final_time)
 
-print(io.recvline())
-
-print(io.recvline())
-
-print(io.recvline())
+print(io.recvall())
 
 
