@@ -68,16 +68,26 @@ Program received signal SIGSEGV, Segmentation fault.
 
 [ Legend: Modified register | Code | Heap | Stack | String ]
 ---------------------------------------------------------------------------------------------
-$rcx   : 0x0               
-$rdx   : 0x0               
-$rsp   : 0x00007fffffffddb8  →  0x0041414141414141 ("AAAAAAA"?)
-$rbp   : 0x4141414141414141 ("AAAAAAAA"?)
-$rsi   : 0x00007fffffffd7b0  →  ""This is the flag we win"\n"
-$rdi   : 0x00007fffffffd780  →  0x00007fffffffd7b0  →  ""This is the flag we win"\n"
-$rip   : 0x00000000004012c3  →  <main+00aa> ret 
-$r15   : 0x0               
-$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow RESUME virtualx86 identification]
-$cs: 0x33 $ss: 0x2b $ds: 0x00 $es: 0x00 $fs: 0x00 $gs: 0x00 
+$rcx   : 0x0  
+               
+$rdx   : 0x0  
+               
+$rsp   : 0x00007fffffffddb8  →  0x0041414141414141 ("AAAAAAA"?)  
+
+$rbp   : 0x4141414141414141 ("AAAAAAAA"?)  
+
+$rsi   : 0x00007fffffffd7b0  →  ""This is the flag we win"\n"  
+
+$rdi   : 0x00007fffffffd780  →  0x00007fffffffd7b0  →  ""This is the flag we win"\n"  
+
+$rip   : 0x00000000004012c3  →  <main+00aa> ret  
+ 
+$r15   : 0x0  
+               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow RESUME virtualx86 identification]  
+
+$cs: 0x33 $ss: 0x2b $ds: 0x00 $es: 0x00 $fs: 0x00 $gs: 0x00  
+ 
 ---------------------------------------------------------------------------------------------
 
 
