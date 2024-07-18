@@ -7,4 +7,10 @@
 
 3. we man the functions to see what they do and potential vulnerability
 
-4. we found are targeted memory addesss 
+4. we found are targeted memory addesss
+
+5. we found the buffer offeset using gdb-gef
+
+6. Starting writing the program
+
+7. 
