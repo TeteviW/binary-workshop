@@ -1,7 +1,7 @@
 # This is the Documentation of the ret2win ctf challenge
 
 
-## Step-byStep Guide
+## Step-by-Step Guide
 
 
 This document outlines the steps taken to identify and exploit a buffer overflow vulnerability
